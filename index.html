@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SwiftPay Rewards</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0a0f1c;
+    color:white;
+    line-height:1.6;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:#111827;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#00ffb3;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:100px 10%;
+    background:linear-gradient(to right,#0f172a,#1e293b);
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#00ffb3;
+    color:black;
+    padding:15px 30px;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+    font-size:16px;
+}
+
+/* SECTIONS */
+.services, .features, .testimonials, .faq{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.services h2, .features h2, .testimonials h2, .faq h2{
+    margin-bottom:40px;
+}
+
+/* GRID */
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:12px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    transition:0.3s;
+}
+
+/* TESTIMONIAL */
+.testimonial-box{
+    background:#1e293b;
+    padding:25px;
+    margin:20px auto;
+    max-width:700px;
+    border-radius:12px;
+}
+
+/* FAQ */
+.faq-item{
+    margin-bottom:20px;
+    text-align:left;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    background:black;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:32px;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">SwiftPay</div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Rewards</a></li>
+        <li><a href="#">FAQ</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Get Free Airtime, Data & Rewards</h1>
+    <p>Complete a simple offer to unlock your reward instantly.</p>
+
+    <button class="btn" onclick="openLocker()">
+        Complete Offer
+    </button>
+
+    <p style="margin-top:15px;font-size:14px;color:#ccc;">
+        Reward unlock requires completing sponsor offer.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <h2>What You Can Unlock</h2>
+
+    <div class="service-grid">
+        <div class="card">
+            <h3>Airtime Rewards</h3>
+            <p>Unlock mobile airtime after completing offers.</p>
+        </div>
+
+        <div class="card">
+            <h3>Data Bundles</h3>
+            <p>Get internet data rewards instantly.</p>
+        </div>
+
+        <div class="card">
+            <h3>Gift Rewards</h3>
+            <p>Access special sponsor rewards and bonuses.</p>
+        </div>
+
+        <div class="card">
+            <h3>Crypto Bonuses</h3>
+            <p>Occasional crypto reward offers available.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <h2>Why Users Join</h2>
+    <p>✔ Fast reward system</p>
+    <p>✔ Simple offer completion</p>
+    <p>✔ 24/7 availability</p>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+    <h2>User Feedback</h2>
+
+    <div class="testimonial-box">
+        "I completed one offer and got my reward instantly!"
+    </div>
+
+    <div class="testimonial-box">
+        "Very easy and fast system."
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+    <h2>FAQ</h2>
+
+    <div class="faq-item">
+        <h3>How do I unlock rewards?</h3>
+        <p>Click the button and complete a sponsor offer.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Is it free?</h3>
+        <p>Yes, but offers must be completed to unlock rewards.</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 SwiftPay Rewards. All Rights Reserved.</p>
+</footer>
+
+<!-- CPA LOCKER SCRIPT -->
+<script>
+function openLocker() {
+    var script = document.createElement("script");
+    script.src = "https://doctoredits.com/script_include.php?id=1891579";
+    script.type = "text/javascript";
+    document.body.appendChild(script);
+}
+</script>
+
+</body>
+</html>
